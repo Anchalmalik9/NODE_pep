@@ -1,32 +1,3 @@
-// // localhost:8080/1234
-// // should be authenticated with 1234 only or else access denied
-
-
-// import express from "express";
-// const app = express();
-// app.listen(8080);
-
-// const auth = (req , res , next) =>{
-//     const id = req.params.id;
-//     if(id==="1234"){
-//         next();
-       
-//     }else{
-//         res.send("access denied");
-//     }
-
-
-// };
-
-
-// app.get("/:id",auth,(req,res)=>{
-
-//    res.send("Welcome");
-    
-       
-// });
-
-
 // modifiy auth and get the output as 
 // {
 //     "token" :1234
