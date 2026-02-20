@@ -14,3 +14,7 @@ app.get("/",(req,res)=>{
     // res.send(user); it will go in json format only because it is a object
     res.json(user);//.json works the same as .send
 });
+
+//3. another request method using POST
+// req.body.name
+// select json and post method and choose body to add another user or id
