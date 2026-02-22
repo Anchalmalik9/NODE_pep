@@ -4,7 +4,7 @@ const app = express();
 app.listen(8080);
 
 app.use(express.json());
-const jwttoken = Math.random()
+const jwttoken =Math.round( Math.random().toString());
 
 const auth = (req,res,next) => {
     const token = req.headers.authorization;
