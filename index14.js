@@ -1,4 +1,17 @@
 
 import express from "express"
+import jwt from "jsonwebtoken"
+const SECRET = "lpu"
 const app = express()
 app.listen(8080);
+
+const user = {
+    name: "john",
+    email : "john@gmail.com",
+    role:  "student",
+};
+
+const token = jwt.sign(user,SECRET,{expiresIn:"1h"})//creating token
+console.log(token)
+
+
