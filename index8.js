@@ -147,7 +147,7 @@ app.post("/", (request, response) => {
   //   console.log(request.body);
   const user = request.body.name;
   users.push(user);
-  response.json(users);
+  response.status(201).json(users);
 });
 
 app.delete("/:id", (request, response) => {

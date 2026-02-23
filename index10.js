@@ -1,0 +1,13 @@
+
+// sending status code
+
+import express from 'express'
+const app = express();
+app.listen(8080,()=>{
+    console.log("server started");
+});
+
+app.get("/",(req,res)=>{
+    // res.json({message : "Helllo World"});
+    res.status(201).json({message : "Helllo World"});
+});
